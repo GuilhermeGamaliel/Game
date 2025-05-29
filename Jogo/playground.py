@@ -46,6 +46,31 @@ for i in range(qnt_perguntas):
         print("acertou miseravi")
         qnt_acerto += 1
 
-print("Voce acertou:", qnt_acerto, "perguntas") 
 
- 
+print("Voce acertou:", qnt_acerto, "perguntas") 
+qnt_acerto = 0
+
+subtraidor(nums1,nums2,subt_nat)
+print("Fase 2 (subtração): ")
+for i in range(qnt_perguntas):
+    print("Quanto é ", nums1[i]," - ", nums2[i],"?")
+    respostas[i] = int(input())
+    if respostas[i] == subt_nat[i]:
+        print("acertou miseravi")
+        qnt_acerto += 1
+
+print("Voce acertou:", qnt_acerto, "perguntas") 
+qnt_acerto = 0
+
+multiplicador(nums1,nums2,mult_nat)
+print("Fase 3 (Multiplicação): ")
+for i in range(qnt_perguntas):
+    print("Quanto é ", nums1[i]," x ", nums2[i],"?")
+    respostas[i] = int(input())
+    if respostas[i] == mult_nat[i]:
+        print("acertou miseravi")
+        qnt_acerto += 1
+
+print("Voce acertou:", qnt_acerto, "perguntas") 
+qnt_acerto = 0
+
